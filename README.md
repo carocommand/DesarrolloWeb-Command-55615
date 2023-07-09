@@ -1,3 +1,2 @@
 # el-cafecito
-Proyecto desarrollo web de coderhouse
-Es la página web de una cafetería
+Proyecto final desarrollo web de coderhouse
