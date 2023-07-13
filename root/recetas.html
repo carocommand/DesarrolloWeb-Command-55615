@@ -2,22 +2,35 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>El Cafecito</title>
     <link rel="shortcut icon" href="imagenes/favicon.png" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-bootstrap.css"/>
   </head>
-  <body>
-    <header>
-      <h1>El Cafecito</h1>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="menu.html">Menú</a>
-        <a href="sobre-nosotros.html">Sobre nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="recetas.html">Recetas</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </header>
+  <body class="container-fluid">
+    <div class="row">
+      <header class="col bg-green pe-0 ps-0">
+        <h1 class="text-center text-brown mb-0">El Cafecito</h1>
+        <nav class="navbar navbar-expand-lg pb-0">
+          <div class="container-fluid green-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav container justify-content-around">
+                <a class="nav-link text-dbrown" href="index.html">Inicio</a>
+                <a class="nav-link text-dbrown" href="menu.html">Menú</a>
+                <a class="nav-link text-dbrown" href="sobre-nosotros.html">Sobre nosotros</a>
+                <a class="nav-link text-dbrown" href="tienda.html">Tienda</a>
+                <a class="nav-link text-dbrown" href="recetas.html">Recetas</a>
+                <a class="nav-link text-dbrown" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
     <main>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore,
@@ -38,9 +51,9 @@
         <li><a href="#receta7">Receta 7</a></li>
         <li><a href="#receta8">Receta 8</a></li>
       </ul>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 1" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 1" />
+        <div class="col">
           <h3 id="receta1">Receta 1</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
@@ -50,9 +63,9 @@
           </p>
         </div>
       </div>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 2" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 2" />
+        <div class="col">
           <h3 id="receta2">Receta 2</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est totam
@@ -62,9 +75,9 @@
           </p>
         </div>
       </div>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 3" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 3" />
+        <div class="col">
           <h3 id="receta3">Receta 3</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -74,9 +87,9 @@
           </p>
         </div>
       </div>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 4" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 4" />
+        <div class="col">
           <h3 id="receta4">Receta 4</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
@@ -86,9 +99,9 @@
           </p>
         </div>
       </div>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 5" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 5" />
+        <div class="col">
           <h3 id="receta5">Receta 5</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis et
@@ -97,9 +110,9 @@
           </p>
         </div>
       </div>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 6" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 6" />
+        <div class="col">
           <h3 id="receta6">Receta 6</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -109,9 +122,9 @@
           </p>
         </div>
       </div>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 7" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 7" />
+        <div class="col">
           <h3 id="receta7">Receta 7</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
@@ -121,9 +134,9 @@
           </p>
         </div>
       </div>
-      <div class="receta">
-        <img src="https://placehold.co/300x200" alt="imagen receta 8" />
-        <div>
+      <div class="row">
+        <img class="col-md-auto" src="https://placehold.co/300x200" alt="imagen receta 8" />
+        <div class="col">
           <h3 id="receta8">Receta 8</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad placeat
@@ -134,8 +147,8 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div>
+    <footer class="row bg-green">
+      <div class="col-md text-center text-dbrown">
         <strong>Dónde estamos</strong><br />
         Gral. Martín de Gainza 635<br />
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5928918002874!2d-58.44
@@ -149,19 +162,22 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div>
+      <div class="col-md text-center text-dbrown">
         <strong>Horarios</strong><br />
         Lun a vie:<br />08:00 a 18:00<br />Sab y dom:<br />10:00 a 20:00
       </div>
-      <div>
+      <div class="col-md text-center text-dbrown">
         <strong>Nuestras redes</strong><br />
         <img src="imagenes/correo-favicon.png" width="18" height="18" />
-        <a href="contacto.html">elcafecito@gmail.com</a><br />
+        <a class="style-link" href="contacto.html">elcafecito@gmail.com</a><br />
         <img src="imagenes/insta-favicon.png" width="18" height="18" />
-        <a href="#">@elcafecito</a><br />
+        <a class="style-link" href="#">@elcafecito</a><br />
         <img src="imagenes/spotify-favicon.png" width="18" height="18" />
-        <a href="#">Spotify</a>
+        <a class="style-link" href="#">Spotify</a>
       </div>
     </footer>
-  </body>
+
+  <!-- Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
 </html>
