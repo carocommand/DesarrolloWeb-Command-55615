@@ -1,5 +1,17 @@
+.main-wrapper {
+    min-height: 80vh;
+}
+
+.bg-beige {
+    background-color: beige;
+}
+
 .bg-green {
 background-color: rgb(139, 189, 139);
+}
+
+.bg-beige {
+    background-color: beige;
 }
 
 .green-nav {
@@ -12,6 +24,20 @@ background-color: rgb(139, 189, 139);
 
 .text-dbrown {
     color: rgb(88, 72, 50);
+}
+
+.text-main {
+    color: rgb(78, 64, 42);
+}
+
+.text-recetas {
+    text-decoration: none;
+    color: rgb(78, 64, 42);
+}
+
+.text-apply {
+    text-decoration: none;
+    color: rgb(94, 138, 94);
 }
 
 .style-link {
@@ -27,4 +53,9 @@ background-color: rgb(139, 189, 139);
 .size-foto-staff {
     width: 220px;
     height: 290px;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 20px;
 }
