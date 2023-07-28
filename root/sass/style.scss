@@ -1,0 +1,217 @@
+$beige: rgb(245, 245, 220);
+$brown: rgb(110, 90, 62);
+$brown2: rgb(88, 72, 50);
+$brown3: rgb(78, 64, 42);
+$green: rgb(154, 202, 154);
+$green2: rgb(139, 189, 139);
+$green3: rgb(94, 138, 94);
+
+.main-wrapper {
+    min-height: 80vh;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.img-menu {
+    width: 300px;
+    height: 240px;
+}
+
+.img-staff {
+    width: 220px;
+    height: 290px;
+}
+
+.img-tienda {
+    width: 250px;
+    height: 250px;
+}
+
+.img-receta {
+    width: 400px;
+    height: 400px;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.bg-beige {
+    background-color: $beige;
+}
+
+.bg-green {
+    background-color: $green2;
+}
+
+.green-nav {
+    background-color: $green;
+}
+
+.text-brown {
+    color: $brown;
+}
+
+.text-dbrown {
+    color: $brown2;
+}
+
+.text-main {
+    color: $brown3;
+}
+
+.text-apply {
+    text-decoration: none;
+    color: $green3;
+}
+
+.style-link {
+    text-decoration: none;
+    color: $brown2;
+}
+
+.receta {
+    @media (max-width: 768px) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.container-fluid, .col-md-auto {
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.navbar {
+    @media (max-width: 768px) {
+        margin-left: 12px;
+    }
+}
+
+header {
+    background-color: $green2;
+        h1 {
+            color: $brown;
+        }
+        nav {
+            div {
+                background-color: $green;
+            }
+        }
+}
+
+#navbar-style {
+    a {
+        color: $brown2;
+        &:hover {
+            font-size: 17px;
+        }
+    }
+}
+
+#lista-recetas {
+        li {
+            color: $brown3;
+                a {
+                    text-decoration: none;
+                    color: $brown3;
+                    transition: 0.2s;
+                        &:hover {
+                            color: $green3;
+                            font-size: 17px;
+                        }
+                }
+        }
+        @media (max-width: 768px) {
+            margin-left: 12px;
+        }
+}
+
+#spotify {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario {
+    margin-top: 40px;
+    #contact-form {
+        margin-top: 20px;
+            div {
+                margin: 2px;
+            }
+    }
+    #button {
+        background-color: $green2;
+        border-color: $green;
+        color: $beige;
+        margin: 10px;
+    }
+    p {
+        padding-bottom: 40px;
+    }
+}
+
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+    div {
+        top: 32px;
+        left: 32px;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: $green;
+        animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+            &:after {
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 32px;
+                height: 32px;
+                background: $green;
+                top: -24px;
+                border-radius: 50% 50% 0 0;
+            }
+            &:before {
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 32px;
+                height: 32px;
+                background: $green;
+                left: -24px;
+                border-radius: 50% 0 0 50%;
+            }
+      }
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+ 

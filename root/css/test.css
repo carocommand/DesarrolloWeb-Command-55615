@@ -1,0 +1,209 @@
+.main-wrapper {
+  min-height: 80vh;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.img-menu {
+  width: 300px;
+  height: 240px;
+}
+
+.img-staff {
+  width: 220px;
+  height: 290px;
+}
+
+.img-tienda {
+  width: 250px;
+  height: 250px;
+}
+
+.img-receta {
+  width: 400px;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .img-receta {
+    width: 100%;
+  }
+}
+
+.bg-beige {
+  background-color: rgb(245, 245, 220);
+}
+
+.bg-green {
+  background-color: rgb(139, 189, 139);
+}
+
+.green-nav {
+  background-color: rgb(154, 202, 154);
+}
+
+.text-brown {
+  color: rgb(110, 90, 62);
+}
+
+.text-dbrown {
+  color: rgb(88, 72, 50);
+}
+
+.text-main {
+  color: rgb(78, 64, 42);
+}
+
+.text-apply {
+  text-decoration: none;
+  color: rgb(94, 138, 94);
+}
+
+.style-link {
+  text-decoration: none;
+  color: rgb(88, 72, 50);
+}
+
+@media (max-width: 768px) {
+  .receta {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid, .col-md-auto {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: 12px;
+  }
+}
+
+header {
+  background-color: rgb(139, 189, 139);
+}
+header h1 {
+  color: rgb(110, 90, 62);
+}
+header nav div {
+  background-color: rgb(154, 202, 154);
+}
+
+#navbar-style a {
+  color: rgb(88, 72, 50);
+}
+#navbar-style a:hover {
+  font-size: 17px;
+}
+
+#lista-recetas li {
+  color: rgb(78, 64, 42);
+}
+#lista-recetas li a {
+  text-decoration: none;
+  color: rgb(78, 64, 42);
+  transition: 0.2s;
+}
+#lista-recetas li a:hover {
+  color: rgb(94, 138, 94);
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  #lista-recetas {
+    margin-left: 12px;
+  }
+}
+
+#spotify {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#formulario {
+  margin-top: 40px;
+}
+#formulario #contact-form {
+  margin-top: 20px;
+}
+#formulario #contact-form div {
+  margin: 2px;
+}
+#formulario #button {
+  background-color: rgb(139, 189, 139);
+  border-color: rgb(154, 202, 154);
+  color: rgb(245, 245, 220);
+  margin: 10px;
+}
+#formulario p {
+  padding-bottom: 40px;
+}
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: rgb(154, 202, 154);
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: rgb(154, 202, 154);
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: rgb(154, 202, 154);
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/*# sourceMappingURL=test.css.map */
