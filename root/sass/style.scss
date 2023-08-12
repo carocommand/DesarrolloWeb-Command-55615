@@ -1,4 +1,5 @@
 $beige: rgb(245, 245, 220);
+$beige2: rgb(236, 236, 192);
 $brown: rgb(110, 90, 62);
 $brown2: rgb(88, 72, 50);
 $brown3: rgb(78, 64, 42);
@@ -10,19 +11,32 @@ $green3: rgb(94, 138, 94);
     min-height: 80vh;
 }
 
+* {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+
 .table {
     border-collapse: separate;
     border-spacing: 20px;
-}
-
-.img-menu {
-    width: 300px;
-    height: 240px;
-}
-
-.img-staff {
-    width: 220px;
-    height: 290px;
 }
 
 .img-tienda {
@@ -33,9 +47,6 @@ $green3: rgb(94, 138, 94);
 .img-receta {
     width: 400px;
     height: 400px;
-    @media (max-width: 768px) {
-        width: 100%;
-    }
 }
 
 .bg-beige {
@@ -62,6 +73,10 @@ $green3: rgb(94, 138, 94);
     color: $brown3;
 }
 
+h2, h3 {
+    padding: 20px;
+}
+
 .text-apply {
     text-decoration: none;
     color: $green3;
@@ -72,29 +87,11 @@ $green3: rgb(94, 138, 94);
     color: $brown2;
 }
 
-.receta {
-    @media (max-width: 768px) {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-}
-
-.container-fluid, .col-md-auto {
-    @media (max-width: 768px) {
-        padding: 0;
-    }
-}
-
-.navbar {
-    @media (max-width: 768px) {
-        margin-left: 12px;
-    }
-}
-
 header {
     background-color: $green2;
         h1 {
+            height: 70px;
+            padding-top: 15px;
             color: $brown;
         }
         nav {
@@ -113,8 +110,41 @@ header {
     }
 }
 
+.div-menu {
+    background-color: $beige2;
+    width: 400px;
+    border-radius: 15px;
+    padding-top: 15px;
+    text-align: center;
+    ul {
+        text-align: justify;
+    }
+}
+
+.staff {
+    grid-column: span 1;
+    max-width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: $beige2;
+    .img-staff {
+        width: 220px;
+        height: 290px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    p {
+        padding: 2px;
+    }
+    .nombre-staff {
+        font-size: large;
+    }
+}
+
 #lista-recetas {
         li {
+            list-style: circle;
             color: $brown3;
                 a {
                     text-decoration: none;
@@ -125,9 +155,6 @@ header {
                             font-size: 17px;
                         }
                 }
-        }
-        @media (max-width: 768px) {
-            margin-left: 12px;
         }
 }
 
@@ -214,4 +241,96 @@ header {
       transform: scale(0.9);
     }
   }
- 
+
+@mixin grid-mobile {
+    display: grid;
+    grid-template-columns: 1;
+}
+
+  @media (max-width: 767px) {
+    .img-receta{
+        width: 100%;
+    }
+    .receta {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .container-staff {
+        @include grid-mobile;
+    }
+    .container-menu {
+        @include grid-mobile;
+        .div-menu {
+            width: 100%;
+            padding-top: 0;
+            padding-bottom: 20px;
+            border-radius: 0;
+            .img-menu {
+                width: 100%;
+                height: 280px;
+            }
+        }
+    }
+    .container-fluid, .col-md-auto {
+        padding: 0;
+    }
+    .navbar {
+        margin-left: 12px;
+    }
+    #lista-recetas {
+        margin-left: 12px;
+    }
+  }
+
+@media (min-width: 768px) {
+    .container-staff {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-menu {
+        display: grid;
+        grid-template-columns: 375px 375px;
+        justify-content: space-evenly;
+        .div-menu {
+            margin-bottom: 30px;
+            .img-menu {
+                width: 350px;
+                height: 280px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .container-staff {
+        display: grid;
+        grid-template-columns: 220px 220px 220px 220px;
+        justify-content: space-evenly;
+     }
+    header {
+        nav {
+            div {
+                height: 40px;
+            }
+        }
+    }
+    .container-menu {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        justify-content: space-evenly;
+        .div-menu {
+            margin-bottom: 50px;
+            .img-menu {
+                width: 375px;
+                height: 300px;
+                border-radius: 15px;
+            }
+        }
+    }
+    .text-about {
+        margin-left: 40px;
+        margin-right: 300px;
+    }
+}
