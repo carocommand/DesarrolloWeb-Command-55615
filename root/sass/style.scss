@@ -110,6 +110,12 @@ header {
     }
 }
 
+.text-inicio {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
 .div-menu {
     background-color: $beige2;
     width: 400px;
@@ -247,7 +253,11 @@ header {
 }
 
   @media (max-width: 767px) {
-    .img-receta{
+    .text-inicio {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .img-receta {
         width: 100%;
     }
     .receta {
